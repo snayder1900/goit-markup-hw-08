@@ -1,0 +1,63 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./components/header";
+@import "./components/modal";
+@import "./components/footer";
+@import "./components/hero";
+@import "./components/characteristics";
+@import "./components/services";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/portfolio";
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+.logo {
+  color: var(--main-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--logo-font-size);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+
+// @media(max-width: 768px) {
+//   .logo {
+//     margin-right: 93px;
+//   }
+// }
+
+
+

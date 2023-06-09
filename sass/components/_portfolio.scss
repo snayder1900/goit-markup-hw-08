@@ -1,0 +1,106 @@
+
+
+.section-portfolio {
+  padding: 94px 0;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-bottom: 50px;
+  
+  .filters__button {
+    background-color: var(--background-color-tertiary);
+    color: var(--subtitle-color);
+    border: none;
+    border-radius: 4px;
+    font-size: var(--button-font-size);
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    padding: 6px 24px;
+  }
+  .filters__button:hover,
+  .filters__button:focus {
+    background-color: var(--button-hover-color);
+    color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+  .categories-item {
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #eeeeee;
+  }
+  .categories-item:hover {
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  .categories-item:hover .frame .overlay {
+    transform: translateY(0);
+  }
+  .categories-item .frame {
+    position: relative;
+    overflow: hidden;
+  }
+  .categories-item .frame__img {
+      width: inherit;
+  }
+  
+  .frame .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white-color);
+    background-color: rgba(33, 149, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: var(--card-font-size);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    transform: translateY(calc(100% + 3px));
+    transition: transform ease-in 0.25s;
+  }
+  
+  .categories-item-container {
+    padding: 20px 24px;
+  }
+  
+  .categories-subtitle {
+    color: var(--subtitle-color);
+    font-size: var(--card-font-size);
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  .categories-text {
+    color: var(--text-color);
+    font-size: var(--button-font-size);
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
